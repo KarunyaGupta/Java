@@ -5,12 +5,8 @@ public class Input{
         System.out.println("Enter username : ");
         String username = inputValue.nextLine();
         System.out.println("UserName : " + username);
-
         // char v = inputValue.nextLine();
         // System.out.println(v);
-        
-        
-       
     }
 }
 
