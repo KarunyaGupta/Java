@@ -13,6 +13,15 @@ class Armstrong {
             System.out.println(n + " is not an Armstrong number.");
         }
         // System.out.println(String.valueOf(n).length());
+
+
+        // to print the range of armstrong number
+
+        for(int i=0;i<1000;i++){
+            if(isArmstrong(i)){
+                System.out.println(i);
+            }
+        }
     }
 
     static boolean isArmstrong(int n) {
