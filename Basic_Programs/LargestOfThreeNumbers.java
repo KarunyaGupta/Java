@@ -13,13 +13,31 @@ class LargestOfThreeNumbers{
         int output;
 
 
-        if(first>second && first>third){
-            output = first;
-        }else if(second>first && second>third){
-            output = second;
-        }
-        else{
-            output = third;
+        // if(first>second && first>third){
+        //     output = first;
+        // }else if(second>first && second>third){
+        //     output = second;
+        // }
+        // else{
+        //     output = third;
+        // }
+
+
+
+        if(first>second){
+            if(first>third){
+                output = first;
+            }else{
+                output = third;
+            }
+        }else {
+            if(second>third){
+                output = second;
+            else{
+                output = third;
+            }
+            }
+        
         }
 
         System.out.println("The largest number is : " + output);
