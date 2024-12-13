@@ -17,5 +17,5 @@ class SearchingInString{
         return false;
     }
 
-    static 
+    
 }
