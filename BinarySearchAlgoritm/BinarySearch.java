@@ -13,7 +13,7 @@ class BinarySearch{
         Arrays.sort(arr);
 
         System.out.print(Arrays.toString(arr));
-        int mid = 
+        
 
         
     }
