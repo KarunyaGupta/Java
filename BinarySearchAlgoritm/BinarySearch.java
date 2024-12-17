@@ -10,11 +10,31 @@ class BinarySearch{
             arr[i] = in.nextInt();
         }
 
-        Arrays.sort(arr);
+        System.out.print("Enter target element : ");
+        int target = in.nextInt();
 
-        System.out.print(Arrays.toString(arr));
-        
+        // Arrays.sort(arr);
+        // System.out.println(Arrays.toString(arr));
 
-        
+        // System.out.print(Arrays.toString(arr));
+        int ans = binarySearch(arr,target);
+        System.out.print(ans);
+    }
+
+    // return the index
+    static int binarySearch(int[] arr , int target){
+        int start = 0;
+        int end = arr.length-1;
+        while(start<= end){
+            int mid = start + (end-start)/2; // might be possible that this exeed the range of integer 
+            if(target<arr[mid]){
+                end = mid-1;
+            }else if(target>arr[mid]){
+                start = mid+1;
+            }else{
+                return mid;
+            }   
+        }
+        return -1;
     }
 }
