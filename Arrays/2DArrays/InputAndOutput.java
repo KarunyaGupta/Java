@@ -23,14 +23,9 @@ class InputAndOutput{
             System.out.println();
         }
 
-        for(int i=0;i<arr.length;i++){
-            System.out.println(Arrays.toString(arr[i]));
-        }
-         
-         // another method to print an array
-        for(int[] num : arr){
-            System.out.println(Arrays.toString(num));
-        }
+       for(int i=0;i<arr.length;i++){
+        System.out.println(Arrays.toString(arr[i]));
+       }
 
         
     }
