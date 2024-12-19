@@ -2,7 +2,7 @@ import java.util.*;
 class InputAndOutput{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        int[][] arr = new int[3][3];
+        int[][] arr = new int[2][2];
         System.out.println(arr.length); // number of rows
 
 
