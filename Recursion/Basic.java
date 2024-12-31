@@ -4,5 +4,10 @@ class Basic{
         // itration --> loops 
         // functions
         // Recursion --> re-calling of a function
+
+
+        // Recursion is a method of solving a computational 
+        // problems where the solutions to smaller instance of the same problem
+        
     }
 }

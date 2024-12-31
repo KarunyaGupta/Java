@@ -9,7 +9,7 @@ class Factorial{
 
     //recursion function
     public static int factorial(int n){
-        if(n<=1){
+        if(n<=1){ // base case
             return 1;
         }else{
             return n*factorial(n-1); // function again call
