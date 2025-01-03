@@ -1,6 +1,6 @@
 class ArraySorted{
     public static void main(String[] args){
-        int[] arr = {1,2,1,4,5};
+        int[] arr = {1,1,4,5};
         System.out.print(isSorted(arr,0));
     }
 
