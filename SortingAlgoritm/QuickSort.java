@@ -5,14 +5,12 @@ class QuickSort{
         // wrost case O(n^2);
         // space complexity O(1) -> linear
         
-
         // approach
         //Pivot & Partition 
         // 1. TO choose a pivit --> center point with which all the elements revolve
         // a. random element 
         // b. last element
         // c. first element
-
 
         // 2. Partition 
         //3. quicksort (left) / quicksort(right)
