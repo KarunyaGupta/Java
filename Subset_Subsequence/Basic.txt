@@ -1,0 +1,2 @@
+permutation and combinations
+subset --> non adjacent collection 
