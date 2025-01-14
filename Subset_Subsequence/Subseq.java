@@ -4,7 +4,6 @@ public class Subseq{
         
         ArrayList <String> list = new ArrayList<>();
         subseq("","abcd",list);
-
         System.out.print(list);
 
     }
