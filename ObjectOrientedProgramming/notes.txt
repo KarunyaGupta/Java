@@ -1,0 +1,14 @@
+OBJECT ORIENTED PROGRAMMING 
+
+
+bject-Oriented Programming (OOP) is a programming paradigm that uses objects and 
+classes to structure software programs. It aims to implement real-world entities like 
+inheritance, hiding, polymorphism, etc., in programming. The main goal of OOP is to bind
+ together the data and the functions that operate on them so that no other part of the code can access 
+ this data except that function
+
+
+
+ // class is just a logical construct 
+ // objects is physical reality 
+
