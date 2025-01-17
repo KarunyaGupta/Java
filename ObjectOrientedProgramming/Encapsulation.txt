@@ -1,0 +1,11 @@
+// encaptulation 
+// inheritance 
+// abstraction 
+// polymorphism 
+
+
+// encapsulation :- define a s the wrapping up of data and methods 
+// under a single unit , it also implements data hiding (useless data for user)
+
+
+

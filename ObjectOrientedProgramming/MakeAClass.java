@@ -33,7 +33,12 @@ class MakeAClass{
         student2.printStudent();
 
 
-        
+        Feculity f1 = new Feculity();
+        f1.id = 10;
+        f1.name = "Rishabh";
+        f1.department = "IT";
+
+        f1.printFeculity();
         
     }
     
@@ -49,7 +54,19 @@ class Student{
         System.out.println("Id:" + id);
         System.out.println("Name:" + name);
     }
+}
 //     int[] rno = new int[5];
 //     String name = new String[10];
 //     float[] marks = new float[5];
+
+
+class Feculity{
+    int id;
+    String name;
+    String department ; // attributes
+    public void printFeculity(){ // function
+        System.out.println("ID: "+ id);
+        System.out.println("Name: "+ name);
+        System.out.println("department: "+ department);
+    }
 }

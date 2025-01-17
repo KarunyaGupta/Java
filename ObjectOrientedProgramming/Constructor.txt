@@ -1,0 +1,8 @@
+is a special method which is invoked automatically at the time 
+od object creation 
+
+
+--> constructors ave the same name as class or structure 
+--> don't jave a return type 
+--> only called once at object creation 
+--> memory alocation happen when constructor is call 
