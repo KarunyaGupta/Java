@@ -1,42 +1,58 @@
-class Constructor {
-    public static void main(String[] args) {
-        Student s1 = new Student(); // constructor
-       
-       s1.name = "Karunya";
-       s1.roll = 3323;
-       s1.password = "abc";
+class CopyConstructor{
+     // properties of obj1 is copied to obj2 
 
-
-        s1.marks[0] = 100;
-        s1.marks[1] = 90;
-        s1.marks[2] = 80;
-
-       Student s2 = new Student(s2);
-        s2.password = "djwd";
+     public static void main(String[] args){
+        Student s1= new Student();
+        s1.name = "Karunya";
+        s1.rollNumber = 123;
+        s1.setPassword("Karunya");
+        String pass = s1.getPassword();
+        System.out.println(pass);
 
 
 
-        // printing the marks of s1
 
-        for(int i=0;i<3;i++){
-            System.out.println(s2.marks);
-        }
-      
-    }
+        Student s2 = new Student(s1);
+        s2.setPassword("s2");
+        s1.name = "Gupta"; // name change 
+        System.out.println(s1.name + " " + s2.name);
+
+
+        // in case of array it take a reference 
+
+        // so the change in s1 object also change the s2 object value 
+        // when the refernce of object is given
+        // to overcome it we have to learn a shallow copy and deep copy
+     }
 }
 
-class Student {
+class Student{
     String name;
-    int roll;
-    String password;
-    int marks[];
+    int rollNumber;
+    private String password;
 
-    // COPY CONSTRUCTOR ---> property of s1 is copied in s2 
-   Student (Student s1){
-    this.name = s1.name;
-    this.roll = s1.roll;
-    this.marks = s1.marks;
-    // not a password --> have to change 
-   }
+    Student(){
+        System.out.print("Constructor is called...");
 
+    }
+
+    Student(String name){
+        this.name = name;
+    }
+    //function
+
+    void setPassword(String pass){
+        this.password = pass;
+    }
+    String getPassword(){
+        return password;
+    }
+
+
+
+    // copy constructor
+    Student(Student s1){
+        this.name = s1.name;
+        this.rollNumber = s1.rollNumber;
+    }
 }
