@@ -9,9 +9,6 @@ class PowerSet{
         System.out.print(list);
 
     }
-
-
-
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         int n = nums.length;
