@@ -1,0 +1,10 @@
+Backtracking algorithms are like problem-solving strategies that help explore different options to find the best solution.
+They work by trying out different paths and if one doesn't work, 
+they backtrack and try another until they find the right one. 
+It's like solving a puzzle by testing different pieces until they fit together perfectly.
+
+
+Types of Backtracking
+1. Decision 
+2. Optimization
+3. Enumeration 
