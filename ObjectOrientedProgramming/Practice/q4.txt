@@ -1,0 +1,10 @@
+which of the following is a correct statment?
+
+class Vehicle{}
+class Car entends Vehicle{}
+
+
+a. Car c = new Car();  --> true
+b. Vehicle v = new Vehicle();  --> true
+c. Vehicle v = new Car(); --> true
+d. Car c = new Vehicle(); --> False

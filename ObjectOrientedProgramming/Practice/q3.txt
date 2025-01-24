@@ -1,0 +1,5 @@
+which of the following modifiers are not allowed in front of class 
+a. private  --> not allowed  
+b. protected --> not allowed -> class become non useable
+c. public 
+d. default
