@@ -2,6 +2,7 @@ import java.util.*;
 class Arraysss{
     public static void main(String[] args){
         int[] arr = new int[5];
+        
         recursion(0,arr);
         System.out.print(Arrays.toString(arr));
         
@@ -11,7 +12,8 @@ class Arraysss{
 
     // using recursion
     public static void recursion(int i , int[] arr){
-        if(i>=5){
+        if(i==arr.length){
+            System.out.println(Arrays.toString(arr));
             return;
         }
         arr[i] = i+1;
