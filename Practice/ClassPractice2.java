@@ -22,7 +22,16 @@ class ClassPractice2{
         printMatrix(transpostOfMatrix);
 
         boolean sym = isSymmetric(matrix,transpostOfMatrix);
-        System.out.println(sym);
+        System.out.println("Is Symmertic : " + sym);
+
+
+        int[] matrixRowSum = rowSum(matrix);
+        System.out.println("Sum of rows of matrix : " + Arrays.toString(matrixRowSum)); 
+
+
+        // minimum and maximum value
+        int[] minMax = maxMin(matrix);
+        System.out.println("Minimum and Maximum value: " + Arrays.toString(minMax));
 
     }
 
@@ -70,4 +79,47 @@ class ClassPractice2{
 
 
     // sum of all the elements
+    public static int[] rowSum(int[][] matrix){
+        int[] rSum = new int[matrix.length];
+        
+        for(int i=0;i<matrix.length;i++){
+            int sum = 0;
+            for(int j=0;j<matrix.length;j++){
+                sum+= matrix[j][i];
+            }
+            rSum[i] = sum;
+        }
+        return rSum;
+    }
+
+    // minimum and maximum value of matrix 
+    public static int[] maxMin(int[][] matrix){
+        int[] res = new int[2];
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+
+        // min value
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix.length;j++){
+                if(matrix[i][j]<min){
+                    min = matrix[i][j];
+                }
+            }
+        }
+
+        // max Value
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix.length;j++){
+                if(matrix[i][j]>max){
+                    max = matrix[i][j];
+                }
+            }
+        }
+
+        res[0] = min;
+        res[1] = max;
+
+
+        return res;
+    }
 }
