@@ -21,6 +21,17 @@ class ClassPractice3{
         seprateLogic(arr,even,odd);
         System.out.println(even);
         System.out.println(odd);
+
+        // merged array
+        ArrayList<Integer> mergeList = new ArrayList<>();
+        mergeList.addAll(even);
+        mergeList.addAll(odd);
+
+        
+        System.out.println(mergeList);
+
+        Collections.sort(mergeList);
+        System.out.println(mergeList);
     }
 
     public static void userInput(int[] arr){
