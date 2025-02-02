@@ -1,7 +1,7 @@
 import java.util.*;
 class PowerSet{
     public static void main(String[] args){
-        int[] nums = {1,2};
+        int[] nums = {1,2,3};
     //  [],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3];  
 
     // create a 2D list     
