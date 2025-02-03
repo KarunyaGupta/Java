@@ -13,7 +13,7 @@ class Arraysss{
     // using recursion
     public static void recursion(int i , int[] arr){
         if(i==arr.length){
-            System.out.println(Arrays.toString(arr));
+            // System.out.println(Arrays.toString(arr));
             return;
         }
         arr[i] = i+1;
