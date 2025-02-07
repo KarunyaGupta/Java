@@ -14,7 +14,7 @@ class NQueen {
         }
         
         nQueen(board, 0, res);
-        
+         
         // Print all solutions in the desired format
         System.out.println(res);
     }
