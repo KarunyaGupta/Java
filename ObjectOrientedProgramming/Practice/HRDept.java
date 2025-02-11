@@ -61,7 +61,7 @@ class HRDepartment {
     }
 }
 
-public class Class1 {
+public class HRDept {
     public static void main(String[] args) {
         HRDepartment hr = new HRDepartment();
 
@@ -77,6 +77,7 @@ public class Class1 {
 
         // Displaying all employees
         System.out.println("All Employees:");
+
         hr.displayAllEmployees();
 
         // Fetching salary by ID
