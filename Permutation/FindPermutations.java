@@ -2,7 +2,7 @@ import java.util.*;
 class FindPermutations{
     public static void main(String[] args){
         String str = "abc";
-        findPermutation(str,"");++
+        findPermutation(str,"");
 
     }
     public static void findPermutation(String str , String ans){
