@@ -1,0 +1,19 @@
+linear data structure 
+
+chain or elements 
+
+chain --> link
+and elements called node 
+
+
+// what is linked list 
+
+have single node --> contain 2 parts --> data(integer , boolean , floating, etc) 
+
+2. next --> reference 
+
+
+reference variable -> point to an object
+
+have to create a class of nodes
+
