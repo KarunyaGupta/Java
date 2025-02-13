@@ -30,13 +30,13 @@ class LibrarySystem {
         Books b1 = new Books("Bharat Ki Khoj", 100, 3);
         System.out.println("Book 1: " + b1.name + ", Pages: " + b1.pages + ", Shelf Number: " + b1.selfNumber);
         Books b2 = new Books();
-        b2.name = "The Alchemist";
+        b2.name = "The new";
         b2.pages = 208;
         b2.selfNumber = 5;
         System.out.println("Book 2: " + b2.name + ", Pages: " + b2.pages + ", Shelf Number: " + b2.selfNumber);
 
         // Creating a book by copying from another book
         Books b3 = new Books(b1);
-        System.out.println("Book 3 (copy of Book 1): " + b3.name + ", Pages: " + b3.pages + ", Shelf Number: " + b3.selfNumber);
+        System.out.println( "Book 3: " + b3.name + ", Pages: " + b3.pages + ", Shelf Number: " + b3.selfNumber);
     }
 }
