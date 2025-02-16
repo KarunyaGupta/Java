@@ -16,16 +16,26 @@ class AddFirst{
     public static Node tail;
 
     public void addFirst(int data){
+        // Node newNode = new Node(data);
+        // if(head == null){
+        //     head = tail= newNode;
+        //     return;
+        // }
+        
+        // // step 2 --> newNode next = head;
+        // newNode.next = head;
+        // // step 3 --> head = new node;
+        // head = newNode;
+
         Node newNode = new Node(data);
         if(head == null){
-            head = tail= newNode;
+            head = tail = newNode;
             return;
         }
-        
-        // step 2 --> newNode next = head;
+
         newNode.next = head;
-        // step 3 --> head = new node;
         head = newNode;
+
     }
 
 
