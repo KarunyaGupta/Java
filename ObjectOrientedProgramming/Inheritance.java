@@ -16,6 +16,12 @@ class Inheritance{
         dog.eat();
         dog.legs = 4;
         System.out.println(dog.legs);
+        Human karunya = new Human();
+        karunya.name = "Karunya";
+        karunya.color = "Fair";
+        karunya.mentalHealth = "unStable";
+        System.out.println(karunya.mentalHealth);
+        System.out.println(karunya.color);
     }
 
 
@@ -38,6 +44,10 @@ class Mammals extends Animal {
 
 class Dogs extends Mammals{
     String bread;
+}
+
+class Human extends Mammals{
+    String mentalHealth;
 }
 
 
