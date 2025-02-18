@@ -11,7 +11,7 @@ class Size{
     public static Node head;
     public static Node tail;
 
-    static int count ;
+    public static int size ;
     
 
     public static void addElementFirst(int data){
@@ -22,6 +22,7 @@ class Size{
         }
         newNode.next = head;
         head = newNode;
+        size++;
     }
 
     public static void addElementLast(int data){
@@ -32,6 +33,7 @@ class Size{
         }
         tail.next = newNode;
         tail = newNode;
+        size++;
         
     }
 
@@ -48,17 +50,17 @@ class Size{
         System.out.println("null");
     }
 
-    public static int sizeOfLinkedList(){
-        Node temp = head;
-        if(head == null){
-            return count;
-        }
-        while(temp!=null){
-            count++;
-            temp = temp.next;
-        }
-        return count;
-    }
+    // public static int sizeOfLinkedList(){
+    //     Node temp = head;
+    //     if(head == null){
+    //         return count;
+    //     }
+    //     while(temp!=null){
+    //         count++;
+    //         temp = temp.next;
+    //     }
+    //     return count;
+    // }
 
     public static void main(String[] args){
         Size ll = new Size();
@@ -67,13 +69,12 @@ class Size{
         // add elements in last 
         ll.addElementLast(2);
         ll.addElementLast(1);
-
         // add elements in starting
         ll.addElementFirst(4);
         ll.addElementFirst(5);
         ll.printList();
 
-        int size = ll.sizeOfLinkedList();
+        // int size = ll.sizeOfLinkedList();
         System.out.println("Size of LinkedList is : " + size);
     }
 }
