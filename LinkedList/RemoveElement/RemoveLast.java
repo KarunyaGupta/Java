@@ -80,12 +80,12 @@ class RemoveLast{
         }
 
         // logic
-        Node current = head;
-        while (current.next != tail) {
-            current = current.next;
+        Node previous = head;
+        while (previous.next != tail) {
+            previous = previous.next;
         }
         int val = tail.data;
-        tail = current;
+        tail = previous;
         tail.next = null;
         size--;
         return val;
