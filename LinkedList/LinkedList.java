@@ -22,6 +22,5 @@ class LinkedList{
         ll.head = new Node(1); // data
         ll.head.next = new Node(2); // next
 
-    }
-    
+    }   
 }
