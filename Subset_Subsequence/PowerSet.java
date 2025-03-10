@@ -22,5 +22,5 @@ class PowerSet{
             result.add(subset);
         }
         return result;
-    }
+    } 
 }
