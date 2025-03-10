@@ -62,6 +62,7 @@ class LinkedListOperations{
         Node temp = head;
         int idx = 0;
         while(temp!= null){
+            
             if(temp.data == target){
                 return idx;
             }
@@ -83,6 +84,6 @@ class LinkedListOperations{
         removeElement();
         printList();
         System.out.println(size);
-        System.out.println(search(100));
+        System.out.println(search(40));
     }
 }
