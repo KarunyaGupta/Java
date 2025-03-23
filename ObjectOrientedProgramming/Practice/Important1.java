@@ -2,7 +2,7 @@ abstract class Appliance {
     String brand;
     int voltage;
     
-    Appliance(String brand, int voltage) 
+    Appliance(String brand, int voltage){ 
         this.brand = brand;
         this.voltage = voltage;
     }
