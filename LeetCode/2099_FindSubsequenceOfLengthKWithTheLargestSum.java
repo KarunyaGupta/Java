@@ -13,7 +13,7 @@ class Solution {
         for (int i = 0; i < k; i++) {
             result[i] = valueWithIndex[i][0];
         }
-        
+         
         return result;
     }
 }
