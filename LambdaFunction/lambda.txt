@@ -1,0 +1,1 @@
+interface have only one function called functional interface
